@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "726975199784",
+    "firebase_url": "https://smartgrow-da35d-default-rtdb.firebaseio.com",
+    "project_id": "smartgrow-da35d",
+    "storage_bucket": "smartgrow-da35d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726975199784:android:d3840dec34a4a1359c931d",
+        "android_client_info": {
+          "package_name": "com.example.irrigation_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOfs-D_6YCxjYfKApZVcJePtCWVx8Uabk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726975199784:android:914005c50108f8809c931d",
+        "android_client_info": {
+          "package_name": "com.example.smart_grow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOfs-D_6YCxjYfKApZVcJePtCWVx8Uabk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

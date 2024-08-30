@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Formulaire">
+    <!-- EditText pour saisir le valeur max de temperature-->
+    <EditText
+        android:id="@+id/temperatureform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Temperature"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/humiditéform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- EditText pour saisir le valeur max de humidité-->
+    <EditText
+        android:id="@+id/humiditéform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Humidity"
+    android:inputType="number"
+    app:layout_constraintBottom_toTopOf="@+id/lumiéreform"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/temperatureform" />
+    <!-- EditText pour saisir le valeur max de lumiére-->
+    <EditText
+        android:id="@+id/lumiéreform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="light"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/humidité_du_solform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humiditéform" />
+    <!-- EditText pour saisir le valeur max de humidité du sol-->
+    <EditText
+        android:id="@+id/humidité_du_solform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Soil moisture"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/niveau_eau_1form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lumiéreform" />
+    <!-- EditText pour saisir le valeur max de niveau d'eau 1-->
+    <EditText
+        android:id="@+id/niveau_eau_1form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Water level 1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidité_du_solform" />
+    <!-- EditText pour saisir le valeur max de niveau d'eau 2-->
+    <!-- Button pour confirmer la saisie des valeurs-->
+    <!-- Button pour annuler la saisie des valeurs-->
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/green"
+        android:text="Irrigation"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="219dp"
+        android:backgroundTint="@color/red"
+        android:text="cancel"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

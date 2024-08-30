@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Déclaration de la version XML utilisée et de l'encodage -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".login"
+    android:id="@+id/loginpage"
+    android:background="@drawable/gradient_list"
+    android:orientation="vertical">
+
+    <!-- TextView pour le texte "Welcome" -->
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="153dp"
+        android:layout_height="108dp"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/white_remove" />
+
+    <!-- TextView pour le texte "Log In" -->
+
+    <!-- TextInputLayout pour le champ de saisie de l'email -->
+
+    <TextView
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Welcome"
+        android:textColor="@color/background_color"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             Log In"
+        android:textColor="@color/background_color"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- TextInputLayout pour le champ de saisie du mot de passe -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Bouton "Sign In" -->
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/background_color"
+        android:text="sign in"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <!-- TextView pour le commentaire "Only admin can added you" -->
+    <TextView
+        android:id="@+id/commentaire_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only admin can added you"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- TextView pour le texte "To contact the administrator, click on the emails below" -->
+    <TextView
+        android:id="@+id/contacter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To contact the administrator, click on the emails below"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- TextView pour l'adresse e-mail de l'admin 1 -->
+    <TextView
+        android:id="@+id/admin_1"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:text="majdizamiti@gmail.com"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textColorLink="@color/blue_ciel"
+        android:textAlignment="center"/>
+</LinearLayout>
